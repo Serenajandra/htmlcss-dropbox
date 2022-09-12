@@ -1,5 +1,5 @@
 /* RESET */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,13 +7,31 @@
 
 /* COMMON */
 
-img{
+img {
     width: 100%;
 }
 
 /* UTILITIES */
 
 /* HEADER */
+header {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    /* DEBUG */
+    height: 50px;
+    background-color: aqua;
+}
+
+.left-nav, .right-nav {
+    width: 30%;
+    display: flex;
+    
+    /* DEBUG */
+    height: 50px;
+    background-color: orange;
+}
 
 /* MAIN */
 
