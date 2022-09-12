@@ -18,6 +18,8 @@ header {
     width: 100%;
     display: flex;
     position: fixed;
+    top: 0;
+    left: 0;
     justify-content: space-between;
     /* DEBUG */
     height: 50px;
@@ -31,6 +33,52 @@ header {
     /* DEBUG */
     height: 50px;
     background-color: orange;
+}
+
+/* BANNER */
+.banner-section{
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 50px;
+      
+      /* DEBUG */
+      background-color: cornflowerblue;
+      min-height: 500px;
+}
+
+.banner-container{
+    /* position: relative;*/
+    width: 80%;
+    margin: 0 auto;
+
+    /* DEBUG */
+    min-height: 400px;
+    background-color: darkcyan;
+}
+
+h1{
+    width: 100%;
+
+    /* DEBUG */
+    background-color: aquamarine;
+    line-height: 2em;
+}
+.text-img{
+    display: flex;
+    width: 100%;
+    
+    /* DEBUG */
+    min-height: 350px;
+    background-color: bisque;
+}
+
+.text-part, .img-part{
+    
+    width: calc(100% / 2);
+
+    /* DEBUG */
+    border: 1px solid black;
 }
 
 /* MAIN */
