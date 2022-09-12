@@ -14,15 +14,14 @@ img {
 
 h1{
     width: 100%;
-
-    /* DEBUG */
-    background-color: aquamarine;
-    line-height: 2em;
+    font-size: 5em;
+    line-height: 1.5em;
 }
 
 h2{
     background-color: green;
     line-height: 4em;
+    margin-top: 70px;
 }
 
 h4{
@@ -35,8 +34,10 @@ h4{
 }
 
 .blue-button {
-    background-color: rgb(33, 33, 241);
+    background-color: rgb(73, 73, 255);
     color: white;
+    padding: .3em .8em;
+    border-color: rgb(73, 73, 255);
 }
 
 .white-button{
@@ -47,6 +48,7 @@ h4{
     width: calc(100% / 3 - 5%);
     margin-bottom: 40px;
     align-content: space-between;
+
     
     /* DEBUG */
     min-height: 600px;
@@ -54,10 +56,9 @@ h4{
     border: 1px solid grey;
 }
 
-a{
-    color: blue;
-    line-height: 2em;
-    padding: 2rem;
+li a{
+    text-decoration: none;
+    color: black;
 }
 
 /* UTILITIES */
@@ -67,21 +68,46 @@ header {
     width: 100%;
     display: flex;
     position: fixed;
+    z-index:999;
     top: 0;
     left: 0;
     justify-content: space-between;
-    /* DEBUG */
-    height: 50px;
-    background-color: aqua;
+    align-items: center;
+    line-height: 3em;
+    background-color:azure;
 }
 
-.left-nav, .right-nav {
+.left-nav {
     width: 30%;
     display: flex;
-    
-    /* DEBUG */
-    height: 50px;
-    background-color: orange;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.8em;
+
+}
+.right-nav {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.8em;
+} 
+
+.left-nav ul, .right-nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+
+.logo-small{
+    width: 90%;
 }
 
 /* BANNER */
@@ -90,44 +116,47 @@ header {
     align-items: flex-end;
     width: 100%;
     margin-top: 50px;
-      
-      /* DEBUG */
-      background-color: cornflowerblue;
-      min-height: 500px;
+    background-color:rgb(147, 200, 230); 
+    height: 750px; 
 }
 
 .banner-container{
-    /* position: relative;*/
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
-
-    /* DEBUG */
-    min-height: 400px;
-    background-color: darkcyan;
 }
 
 
 .text-img{
     display: flex;
     width: 100%;
-    
-    /* DEBUG */
-    min-height: 350px;
-    background-color: bisque;
 }
 
-.text-part, .img-part{
-    
-    width: calc(100% / 2);
+.text-part{
+    padding: 1em 0;
+    width: 30%;
+    margin: 0 auto;
+}
+.img-part{
+    width: 70%;
+    position: relative;
+}
 
-    /* DEBUG */
-    border: 1px solid black;
+.fa-arrow-down{
+font-size: 3.5em;
+}
+
+.jumbo{
+    position: absolute;
+    top: 23%;
+}
+.text-part p{
+    padding: 3em 0;
 }
 
 /* MAIN */
 
 main{
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
 
     /* DEBUG */
@@ -136,18 +165,34 @@ main{
 }
 
 .radio-buttons{
-    /* DEBUG */
-    width: 100%;
-    background-color: darkorange;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
     line-height: 4em;
-
 }
 
-.row-choose{
+.row-choose-plan{
     display: flex;
     justify-content: space-between;
 }
+.singolo{
+    width: 100%;   
+    text-align: center; 
+    border-bottom: 1px solid grey;
+    line-height: 3em;
+}
+.professional{
+    padding: 2em;
 
+}
+/* .professional :first-child{
+    padding-bottom: 1.5em;
+} */
+
+.prize p {
+padding-top: 1em;
+}
 
 .team-text{
     width: 100%;
@@ -181,6 +226,12 @@ main{
     justify-content: space-between;
     flex-wrap: wrap;
 
+}
+
+.blu-link{
+    color: blue;
+    line-height: 2em;
+    padding: 2rem;
 }
 
 /* /MAIN */
@@ -268,14 +319,14 @@ footer{
 }
 
 
-ul{
+footer ul{
     width: calc(100% / 5);
     /* DEBUG */
     border: 1px solid white;
 }
 
 /* DEBUG */
-footer hr, a{
+footer hr, footer a{
     width: 10%;
     margin: 3em 7em;
     color: white;

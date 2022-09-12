@@ -15,18 +15,55 @@
    
     <!-- Header -->
     <header>
-        <div class="left-nav"></div>
-        <div class="right-nav"></div>
+        <div class="left-nav">
+            <div class="logo-container">
+                <img class="logo-small" src="img/logo-small.png" alt="">
+            </div>
+            <ul>
+                <li> 
+                    <a href="">Perchè Dropbox</a>
+                </li>
+                <li> 
+                    <a href="">Funzioni</a>
+                </li>
+                <li>
+                    <a href="">Piani e Prezzi</a> 
+                </li>
+            </ul>
+        </div>
+        <div class="right-nav">
+            <ul>
+                <li>
+                    <a href="">Supporto</a>
+                </li>
+                <li>
+                    <a href="">Contatta l'ufficio vendite</a>
+                </li>
+                <li>
+                    <a href="">Accedi</a>
+                </li>
+                <li>
+                    <button type="button" class="blue-button">Inizia</button>
+                </li>
+            </ul>
+        </div>
     </header>
     <!-- /header -->
 
     <!-- banner -->
     <div class="banner-section">
         <div class="banner-container">
-            <h1>Titolo</h1>
+            <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
             <div class="text-img">
-                <div class="text-part"></div>
-                <div class="img-part"></div>
+                <div class="text-part">
+                    <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
+                    <button type="button" class="blue-button">Inizia la tua prova gratuita</button>
+                    <p>Annulla in qualsiasi momento</p>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+                <div class="img-part">
+                    <img class="jumbo" src="img/jumbo.png" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -35,15 +72,41 @@
     <main>
         <h2>Trova il piano business che fa per te</h2>
         <div class="radio-buttons">
-            <input type="radio" name="Fatturazione" id="mensile">
-            <label for="mensile">Fatturazione mensile</label>
-            <input type="radio" name="Fatturazione" id="manuale">
-            <label for="manuale">Fatturazione manuale</label>
+            <div class="btn-mensile">
+                <input type="radio" name="Fatturazione" id="mensile">
+                <label for="mensile">Fatturazione mensile</label>
+            </div>
+            <div class="btn-manuale">
+                <input type="radio" name="Fatturazione" id="manuale">
+                <label for="manuale">Fatturazione manuale</label>
+            </div>
         </div>
-        <div class="row-choose">
-            <div class="col singolo"></div>
-            <div class="col team"></div>
-            <div class="col azienda"></div>
+        <div class="row-choose-plan">
+            <div class="col">
+                <div class="singolo">Singolo</div>
+                <div class="professional">
+                    <div class="prize">
+                        <h3>Professional</h3>
+                        <p> <strong>&euro; 12.00</strong></p>
+                        <p>/mese</p>
+                    </div> 
+                    <ul>
+                        <li>1 utente</li>
+                        <li>5  TB di spazio di archiviazione sicuro</li>
+                        <li> Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                    </ul>
+                    <button type="buttom" class="blue-button">Prova gratis per 30 giorni</button>  
+                    <p>oppure <a href="">acquista ora</a></p>
+                    <hr>
+                    <p><strong>Punti salienti del piano</strong></p>
+                    <ul>
+                        <li>Invia file fino a 100GB con Dropbox Transfert</li>
+                        <li>Cartelle offline su dispositivi mobili</li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="col title">Team</div>
+            <div class="col title">Azienda</div>
         </div>
         <div class="team-section">
             <h4>team</h4>
@@ -68,7 +131,7 @@
             </div>
         </div>
         <h2>Più di 500.000 team utilizzano Dropbox Business</h2>
-        <a href="">Scopri di più sui nostri clienti</a>
+        <a class="blu-link" href="">Scopri di più sui nostri clienti</a>
     </main>
     <!-- /main -->
 
