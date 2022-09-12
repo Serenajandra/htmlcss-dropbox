@@ -3,12 +3,51 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* COMMON */
 
 img {
     width: 100%;
+}
+
+h1{
+    width: 100%;
+
+    /* DEBUG */
+    background-color: aquamarine;
+    line-height: 2em;
+}
+
+h2{
+    background-color: green;
+    line-height: 4em;
+}
+
+h4{
+    width: 100%;
+    line-height: 2em;
+    text-align: center;
+    
+    /* DEBUG */
+    background-color: aquamarine;
+}
+
+.blue-button {
+    background-color: rgb(33, 33, 241);
+    color: white;
+}
+
+.col{
+    width: calc(100% / 3 - 5%);
+    margin-bottom: 40px;
+    align-content: space-between;
+    
+    /* DEBUG */
+    min-height: 600px;
+    background-color: darkgrey;
+    border: 1px solid grey;
 }
 
 /* UTILITIES */
@@ -57,13 +96,7 @@ header {
     background-color: darkcyan;
 }
 
-h1{
-    width: 100%;
 
-    /* DEBUG */
-    background-color: aquamarine;
-    line-height: 2em;
-}
 .text-img{
     display: flex;
     width: 100%;
@@ -83,6 +116,62 @@ h1{
 
 /* MAIN */
 
+main{
+    width: 80%;
+    margin: 0 auto;
+
+    /* DEBUG */
+    background-color: rgb(183, 138, 225);
+    min-height: 1000px;
+}
+
+.radio-buttons{
+    /* DEBUG */
+    width: 100%;
+    background-color: darkorange;
+    line-height: 4em;
+
+}
+
+.row-choose{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.team-text{
+    width: 100%;
+    /* position: relative; */
+    display: flex;
+    align-items: flex-start;
+    /* DEBUG */
+    min-height: 200px;
+    background-color: plum;
+}
+
+.contatta-vendite{
+    width: 75%;
+
+    /* DEBUG */
+    min-height: 200px;
+    background-color: aqua;
+}
+
+.partner-contact{
+    display: flex;
+    width: 100%;
+    
+    /* DEBUG */
+    min-height: 350px;
+    background-color: bisque; 
+}
+
+.row-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
 
 /* fOOTER */
 
