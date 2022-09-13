@@ -24,15 +24,6 @@ h2{
     margin-top: 70px;
 }
 
-h4{
-    width: 100%;
-    line-height: 2em;
-    text-align: center;
-    
-    /* DEBUG */
-    background-color: aquamarine;
-}
-
 .blue-button {
     background-color: rgb(73, 73, 255);
     color: white;
@@ -45,7 +36,7 @@ h4{
 }
 
 .col{
-    width: calc(100% / 3 - 5%);
+    width: calc(100% / 3 - 3%);
     margin-bottom: 40px;
     align-content: space-between;
 
@@ -61,6 +52,18 @@ li a{
     color: black;
 }
 
+ul{
+    
+    list-style-type: none;
+}
+
+hr{
+    margin: 2em 0;
+}
+
+.fa-check{
+    color:blue;
+}
 /* UTILITIES */
 
 /* HEADER */
@@ -95,7 +98,6 @@ header {
 
 .left-nav ul, .right-nav ul {
     display: flex;
-    list-style: none;
     align-items: center;
     justify-content: space-around;
     width: 70%;
@@ -158,10 +160,6 @@ font-size: 3.5em;
 main{
     width: 60%;
     margin: 0 auto;
-
-    /* DEBUG */
-    background-color: rgb(183, 138, 225);
-    min-height: 1000px;
 }
 
 .radio-buttons{
@@ -176,40 +174,72 @@ main{
     display: flex;
     justify-content: space-between;
 }
-.singolo{
+.title-plan{
     width: 100%;   
     text-align: center; 
     border-bottom: 1px solid grey;
     line-height: 3em;
 }
-.professional{
-    padding: 2em;
-
+.plan{
+    padding: 1.5em;
 }
-/* .professional :first-child{
-    padding-bottom: 1.5em;
-} */
 
+.plan ul{
+    padding: 2em 0;
+}
+
+.plan ul li{
+     display: flex;
+     padding: 1em 0;
+}
+
+.plan ul p {
+    padding-left: 0.5em;
+}
 .prize p {
-padding-top: 1em;
+    padding-top: 1em;
 }
 
+.plan .blue-button{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 2em;
+}
+
+.plan hr{
+    width: 30%;
+    color: grey;  
+}
+
+.team-section .team-title{
+    width: 100%;
+    line-height: 2em;
+    text-align: center;
+    border: 1px solid grey;
+}
 .team-text{
     width: 100%;
-    /* position: relative; */
     display: flex;
     align-items: flex-start;
-    /* DEBUG */
-    min-height: 200px;
-    background-color: plum;
+    border: 1px solid grey;
 }
 
 .contatta-vendite{
     width: 75%;
+    padding: 2em;
+    line-height: 2em;
+}
 
-    /* DEBUG */
-    min-height: 200px;
-    background-color: aqua;
+.contatta-vendite p{
+    padding-top: 3em;
+    line-height: 1.5em;
+}
+
+.vendite-button-container .blue-button{
+    position: relative;
+    left: 1em;
+    top: 2em;
 }
 
 .partner-contact{
