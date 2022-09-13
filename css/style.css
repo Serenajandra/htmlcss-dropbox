@@ -18,12 +18,6 @@ h1{
     line-height: 1.5em;
 }
 
-h2{
-    background-color: green;
-    line-height: 4em;
-    margin-top: 70px;
-}
-
 .blue-button {
     background-color: rgb(73, 73, 255);
     color: white;
@@ -32,18 +26,14 @@ h2{
 }
 
 .white-button{
-    background-color: azure;
+    background-color: whitesmoke;
+    padding: .8em 1em;
 }
 
 .col{
     width: calc(100% / 3 - 3%);
     margin-bottom: 40px;
     align-content: space-between;
-
-    
-    /* DEBUG */
-    min-height: 600px;
-    background-color: darkgrey;
     border: 1px solid grey;
 }
 
@@ -103,7 +93,7 @@ header {
     width: 70%;
 }
 
-.logo-container{
+.header-logo-container{
     display: flex;
     align-items: center;
 }
@@ -155,10 +145,14 @@ font-size: 3.5em;
     padding: 3em 0;
 }
 
+.plans-presentation{
+    line-height: 4em;
+    margin-top: 70px;
+}
 /* MAIN */
 
 main{
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
 }
 
@@ -169,17 +163,19 @@ main{
     width: 50%;
     line-height: 4em;
 }
-
-.row-choose-plan{
-    display: flex;
-    justify-content: space-between;
-}
 .title-plan{
     width: 100%;   
     text-align: center; 
     border-bottom: 1px solid grey;
     line-height: 3em;
 }
+
+/* PLANS-CHOICE */
+.row-choose-plan{
+    display: flex;
+    justify-content: space-between;
+}
+
 .plan{
     padding: 1.5em;
 }
@@ -225,6 +221,8 @@ main{
     border: 1px solid grey;
 }
 
+
+/* CONTATTA UFFICIO VENDITE */
 .contatta-vendite{
     width: 75%;
     padding: 2em;
@@ -242,15 +240,24 @@ main{
     top: 2em;
 }
 
+
+/* CONTATTA PARTNERS */
 .partner-contact{
     display: flex;
     width: 100%;
-    
-    /* DEBUG */
-    min-height: 350px;
-    background-color: bisque; 
+    padding: 2em 0;
 }
 
+.partner-contact .img-part{
+    width: 60%;
+}
+
+/* FEATURES-SECTION */
+
+
+.features h3 {
+    padding: 2em 0;
+}
 .row-cards{
     display: flex;
     justify-content: space-between;
@@ -258,10 +265,23 @@ main{
 
 }
 
+/* DISCOVER-CLIENTS-SECTION */
+
+.discover-clients{
+    width: 70%;
+    font-size: 1.5em;
+    border: 1px solid black;
+    padding: 2em 0;
+}
+
 .blu-link{
+    margin: 1.5em 0 2em 0;
+}
+
+.blu-link a{
+    font-size: 0.6em;
     color: blue;
-    line-height: 2em;
-    padding: 2rem;
+    line-height: 4em;
 }
 
 /* /MAIN */
@@ -270,26 +290,90 @@ main{
     width: 100%;
     display: flex;
 
-    /* DEBUG */
-    min-height: 400px;
-    background-color: crimson;
 }
+
+
+
 
 .row-sponsor{
     width: calc(100% / 3);
     border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
-    
-    /* DEBUG */
-    min-height: 400px;
 }
 
 .col-sponsor{
     width: calc(100% / 2);
 
-    /* DEBUG */
-    border: 1px solid grey;
+}
+
+.logo-container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+}
+
+.logo-img{
+   filter:invert();
+   
+}
+
+.designit{
+    background-color: #a2d39b;
+    border: 8px solid rgb(204, 254, 204);
+    position: relative;
+}
+.arizona {
+    background-color:#61082b;
+    position: relative;
+}
+
+.florida{
+background-color: #0093ce;
+position:relative;
+}
+
+.topps{
+background-color: #ff1c1c;
+position: relative;
+}
+
+.world{
+    background-color: #d5001f;
+    position: relative;
+}
+.hearst{
+    background-color:#b4d0e7 ;
+    position: relative;
+}
+.lonely{
+    background-color:#0d2481 ;
+    position: relative;
+}
+.clear{
+    background-color:#ffd830 ;
+    position: relative;
+}
+
+.black-designit{
+width: 50%;
+
+}
+
+.central{
+    font-size: 0.9em;
+    align-content: center;
+    padding: .5em 1em;
+    
+}
+.central :last-child{
+    padding-top: 2em;
+}
+
+.central hr{
+    width: 20%;
 }
 
 .advertising-container{
