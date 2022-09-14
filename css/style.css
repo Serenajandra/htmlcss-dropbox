@@ -7,6 +7,7 @@
 }
 
 /* COMMON */
+/* UTILITIES */
 
 img {
     width: 100%;
@@ -54,7 +55,6 @@ hr{
 .fa-check{
     color:blue;
 }
-/* UTILITIES */
 
 /* HEADER */
 header {
@@ -151,12 +151,14 @@ font-size: 3.5em;
 }
 /* MAIN */
 
-main{
-    width: 100%;
-}
+/* main{
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+} */
 
-.top-container{
-    width: 65%;
+.thin-container{
+    width: 70%;
     margin: 0 auto;
 }
 
