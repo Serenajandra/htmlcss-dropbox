@@ -3,57 +3,67 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
 }
 
 /* COMMON */
-/* UTILITIES */
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;  
+}
 
 img {
+    max-width: 100%;
+}
+
+h1 {
     width: 100%;
+    font-size: 5rem;
+    line-height: 6rem;
+    margin-top: 1em;
 }
 
-h1{
-    width: 100%;
-    font-size: 5em;
-    line-height: 1.5em;
+h2 {
+    font-size: 2rem;
 }
 
-.blue-button {
-    background-color: rgb(73, 73, 255);
-    color: white;
-    padding: .3em .8em;
-    border-color: rgb(73, 73, 255);
-}
-
-.white-button{
-    background-color: whitesmoke;
-    padding: .8em 1em;
-}
-
-.col{
-    width: calc(100% / 3 - 3%);
-    margin-bottom: 40px;
-    align-content: space-between;
-    border: 1px solid grey;
-}
-
-li a{
+li a {
     text-decoration: none;
     color: black;
 }
 
-ul{
-    
+ul {
     list-style-type: none;
 }
 
-hr{
+hr {
     margin: 2em 0;
 }
 
-.fa-check{
+.fa-check {
     color:blue;
+}
+
+/* UTILITIES */
+.blue-button {
+    background-color: #0061ff;
+    color: white;
+    padding: .3em .8em;
+    border-color:#0061ff;
+    display: inline-block;
+}
+
+.white-button {
+    background-color: whitesmoke;
+    padding: .8em 1em;
+    display: inline-block;
+}
+
+.col {
+    width: calc(100% / 3 - 3%);
+    margin-bottom: 40px;
+    align-content: space-between;
+    border: 1px solid grey;
 }
 
 /* HEADER */
@@ -66,110 +76,93 @@ header {
     left: 0;
     justify-content: space-between;
     align-items: center;
-    line-height: 3em;
+    line-height: 4em;
     background-color:azure;
 }
 
-.left-nav {
-    width: 30%;
+.left-nav, .right-nav {
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     font-size: 0.8em;
 
 }
-.right-nav {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 0.8em;
-} 
 
 .left-nav ul, .right-nav ul {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 70%;
 }
 
-.header-logo-container{
+.logo-small-container {
     display: flex;
     align-items: center;
 }
 
-.logo-small{
-    width: 90%;
-}
 
 /* BANNER */
-.banner-section{
+.banner-section {
     display: flex;
     align-items: flex-end;
     width: 100%;
     margin-top: 50px;
-    background-color:rgb(147, 200, 230); 
-    height: 750px; 
+    background-color:#b4d0e7; 
 }
 
-.banner-container{
+.banner-container {
     width: 70%;
     margin: 0 auto;
 }
 
 
-.text-img{
+.text-and-img {
     display: flex;
     width: 100%;
 }
 
-.text-part{
+.text-part {
     padding: 1em 0;
     width: 30%;
-    margin: 0 auto;
+    margin: 2.8em 0 auto;
 }
-.img-part{
+
+.img-part {
     width: 70%;
     position: relative;
 }
 
-.fa-arrow-down{
-font-size: 3.5em;
-}
-
-.jumbo{
+.jumbo {
     position: absolute;
-    top: 23%;
+    top: 22%;
 }
-.text-part p{
-    padding: 3em 0;
+.text-part p {
+    padding: 2em 0;
 }
 
-.plans-presentation{
-    line-height: 4em;
-    margin-top: 70px;
-}
 /* MAIN */
 
-/* main{
-   width: 100%;
-   max-width: 1200px;
-   margin: 0 auto;
-} */
-
-.thin-container{
+.thin-container {
     width: 70%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.radio-buttons{
+
+.plans-title {
+    line-height: 4em;
+    margin-top: 90px;
+}
+.radio-buttons {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 50%;
     line-height: 4em;
+    padding: 2em;
 }
-.title-plan{
+.title-plan {
     width: 100%;   
     text-align: center; 
     border-bottom: 1px solid grey;
@@ -177,12 +170,12 @@ font-size: 3.5em;
 }
 
 /* PLANS-CHOICE */
-.row-choose-plan{
+.row-choose-plan {
     display: flex;
     justify-content: space-between;
 }
 
-.plan{
+.plan-container {
     padding: 1.5em;
 }
 
@@ -198,29 +191,30 @@ font-size: 3.5em;
 .plan ul p {
     padding-left: 0.5em;
 }
-.prize p {
+.price p {
     padding-top: 1em;
 }
 
-.plan .blue-button{
+.plan .blue-button {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 2em;
+    width: 15em;
 }
 
-.plan hr{
+.plan hr {
     width: 30%;
     color: grey;  
 }
 
-.team-section .team-title{
+.team-section .team-title {
     width: 100%;
     line-height: 2em;
     text-align: center;
     border: 1px solid grey;
 }
-.team-text{
+.team-text {
     width: 100%;
     display: flex;
     align-items: flex-start;
@@ -229,42 +223,51 @@ font-size: 3.5em;
 
 
 /* CONTATTA UFFICIO VENDITE */
-.contatta-vendite{
+.contatta-vendite {
     width: 75%;
     padding: 2em;
     line-height: 2em;
 }
 
-.contatta-vendite p{
+.contatta-vendite p {
     padding-top: 3em;
     line-height: 1.5em;
 }
 
-.vendite-button-container .blue-button{
+.vendite-button-container .blue-button {
     position: relative;
     left: 1em;
     top: 2em;
 }
 
 
-/* CONTATTA PARTNERS */
-.partner-contact{
+/* CONTATTA PARTNERS DROPBOX */
+.partner-contact {
     display: flex;
     width: 100%;
-    padding: 2em 0;
+    padding: 4em 0;
 }
 
-.partner-contact .img-part{
+.partner-contact .img-part {
     width: 60%;
+}
+
+.partner-contact .text-part {
+    padding-left: 3em;
+    width: 40%;
 }
 
 /* FEATURES-SECTION */
 
-
-.features h3 {
-    padding: 2em 0;
+.features {
+    border-style: none;
 }
-.row-cards{
+
+.cards-container {
+    margin-top: 2em;
+}
+
+.row-cards {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -273,43 +276,39 @@ font-size: 3.5em;
 
 /* DISCOVER-CLIENTS-SECTION */
 
-.discover-clients{
-    width: 70%;
-    font-size: 1.5em;
+.discover-clients {
+    width: 60%;
     padding: 2em 0;
 }
 
-.blu-link{
+.blu-link {
     margin: 1.5em 0 2em 0;
 }
 
-.blu-link a{
+.blu-link a {
     font-size: 0.6em;
     color: blue;
     line-height: 4em;
 }
 
-/* LOGO-SQUARES */
- .sponsor{
+/* LOGO-SQUARES-SECTION */
+
+ .sponsor {
     width: 100%;
     display: flex;
-
-
 }
 
-.row-sponsor{
+.row-sponsor {
     width: calc(100% / 3);
-    border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
 }
 
-.col-sponsor{
+.col-sponsor {
     width: calc(100% / 2);
-
 }
 
-.logo-container{
+.logo-container {
     position: absolute;
     top:50%;
     left:50%;
@@ -317,12 +316,12 @@ font-size: 3.5em;
     width: 60%;
 }
 
-.logo-img{
+.logo-img {
    filter:invert();
    
 }
 
-.designit{
+.designit {
     background-color: #a2d39b;
     border: 8px solid rgb(204, 254, 204);
     position: relative;
@@ -332,89 +331,85 @@ font-size: 3.5em;
     position: relative;
 }
 
-.florida{
+.florida {
 background-color: #0093ce;
 position:relative;
 }
 
-.topps{
+.topps {
 background-color: #ff1c1c;
 position: relative;
 }
 
-.world{
+.world {
     background-color: #d5001f;
     position: relative;
 }
-.hearst{
+.hearst {
     background-color:#b4d0e7 ;
     position: relative;
 }
-.lonely{
+.lonely {
     background-color:#0d2481 ;
     position: relative;
 }
-.clear{
+.clear {
     background-color:#ffd830 ;
     position: relative;
 }
 
-.black-designit{
+.black-designit {
 width: 50%;
-
 }
 
-.central{
-    font-size: 0.9em;
+.central {
     align-content: center;
-    padding: .5em 1em;
-    
+    padding: 0 2em;
+    line-height: 1.5em;
 }
-.central :last-child{
-    padding-top: 2em;
+
+ .cit {
+    padding: 2em 0 5em;
 }
 
 .central hr{
     width: 20%;
 }
 
-.advertising-container{
+/* PROMOTION-SECTION */
+
+
+.promotion {
+    background-color:hsl(207deg 52% 81%); 
     width: 100%;
+}
+
+.promo-container {
+    width:70%;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 6em;
-    background-color:hsl(207deg 52% 81%);
+    justify-content: space-between;
+    padding: 6em;  
 }
 
-.advertising-container h2{
+.promo-text {
+    width: 50%;
     color: #61082b;
 }
 
-.no-border-btn{
+.no-border-btn {
     border-style:none;
 }
 
+/* FAQ-SECTION */
 
-/* .bottom{
-    width: 80%;
-    margin: 0 auto;
-
-    /* DEBUG */
-    /* background-color: rgb(183, 138, 225);
-    min-height: 800px;
-} */ 
-
-.faq{
-    
-    /* width dovrebbe essere 65% */
-    width: 100%;
+.faq {
+    width: 70%;
     margin: 4em auto;
 }
 
-
-.faq-container{
+.faq-container {
     display: flex;
     align-items: center;
     justify-content: space-between;  
@@ -423,24 +418,18 @@ width: 50%;
 
 /* fOOTER */
 
-footer{
+footer {
     width: 100%;
     background-color: black;
     color: white;
-    /* DEBUG */
-    min-height: 400px;
+    min-height: 600px;
 }
 
 .footer-nav{
     width: 80%;
     display: flex;
     margin: 0 auto;
-    /* DEBUG */
-    min-height: 400px;
-    align-content: space-around;
-
 }
-
 
 footer ul{
     margin-top: 5em;
@@ -448,11 +437,13 @@ footer ul{
     line-height: 3em;
 }
 
-/* DEBUG */
+footer h2{
+    font-size: 1.5em;
+}
+
 footer hr, footer a{
     width: 10%;
-    margin: 3em 7em;
+    margin: 4em 7em;
     color: white;
     text-decoration: none;
-
 }

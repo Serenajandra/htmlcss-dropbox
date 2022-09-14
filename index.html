@@ -15,11 +15,13 @@
    
     <!-- Header -->
     <header>
-        <div class="left-nav">
-            <div class="header-logo-container">
-                <img class="logo-small" src="img/logo-small.png" alt="">
-            </div>
+        <nav class="left-nav">
             <ul>
+                <li>
+                    <a class="logo-small-container"href="">
+                        <img class="logo-small" src="img/logo-small.png" alt="">
+                    </a> 
+                </li>    
                 <li> 
                     <a href="">Perchè Dropbox</a>
                 </li>
@@ -30,8 +32,9 @@
                     <a href="">Piani e Prezzi</a> 
                 </li>
             </ul>
-        </div>
-        <div class="right-nav">
+        </nav>
+
+        <nav class="right-nav">
             <ul>
                 <li>
                     <a href="">Supporto</a>
@@ -46,33 +49,33 @@
                     <button type="button" class="blue-button">Inizia</button>
                 </li>
             </ul>
-        </div>
+        </nav>
     </header>
     <!-- /header -->
 
     <!-- banner -->
-    <div class="banner-section">
+    <section class="banner-section">
         <div class="banner-container">
             <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
-            <div class="text-img">
+            <div class="text-and-img">
                 <div class="text-part">
                     <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
                     <button type="button" class="blue-button">Inizia la tua prova gratuita</button>
                     <p>Annulla in qualsiasi momento</p>
-                    <i class="fa-solid fa-arrow-down"></i>
+                    <i class="fa-solid fa-arrow-down fa-3x"></i>
                 </div>
                 <div class="img-part">
                     <img class="jumbo" src="img/jumbo.png" alt="">
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- /banner -->
     
     <!-- Main -->
     <main>
         <div class="thin-container">
-            <h2 class="plans-presentation">Trova il piano business che fa per te</h2>
+            <h2 class="plans-title">Trova il piano business che fa per te</h2>
             <div class="radio-buttons">
                 <div class="btn-mensile">
                     <input type="radio" name="Fatturazione" id="mensile">
@@ -84,160 +87,166 @@
                 </div>
             </div>
 
-            <!-- plans -->
-            <div class="row-choose-plan">
-                <div class="col">
+            <!-- plans choice -->
+            <section class="row-choose-plan">
+                <div class="col plan">
                     <div class="title-plan"> 
                         <i class="fa-solid fa-user"></i>
                         <span>Singolo</span>   
                     </div>
-                    <div class="plan">
-                        <div class="prize">
-                            <h3>Professional</h3>
-                            <p> <strong>&euro; 12.00</strong>
-                            <br>/mese</p>
-                        </div> 
-                    </div>    
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-user"></i>
-                            <p> 1 utente</p>
-                        </li>
+                    <div class="plan-container">
+                        <div class="plan-resume">
+                            <div class="price">
+                                <h3>Professional</h3>
+                                <p> <strong>&euro; 12.00</strong>
+                                <br>/mese</p>
+                            </div> 
+                        </div>    
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-user"></i>
+                                <p> 1 utente</p>
+                            </li>
                         
-                        <li>
-                            <i class="fa-solid fa-folder"></i>
-                            <p>5TB di spazio di archiviazione sicuro</p>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-share-nodes"></i>
-                            <p> Funzioni di produttività premium e condivisione file semplice e sicura</p>
-                        </li>
-                    </ul>
-                    <button type="button" class="blue-button">Prova gratis per 30 giorni</button>  
-                    <p>oppure <a href="">acquista ora</a></p>
-                    <hr>
-                    <p><strong>Punti salienti del piano</strong></p>
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            <p> Invia file fino a 100GB con Dropbox Transfert</p>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            <p>Cartelle offline su dispositivi mobili</p>
-                        </li>
-                    </ul>
+                            <li>
+                                <i class="fa-solid fa-folder"></i>
+                                <p>5TB di spazio di archiviazione sicuro</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-share-nodes"></i>
+                                <p> Funzioni di produttività premium e condivisione file semplice e sicura</p>
+                            </li>
+                        </ul>
+                        <button type="button" class="blue-button">Prova gratis per 30 giorni</button>  
+                        <p>oppure <a href="">acquista ora</a></p>
+                        <hr>
+                        <p><strong>Punti salienti del piano</strong></p>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p> Invia file fino a 100GB con Dropbox Transfert</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>Cartelle offline su dispositivi mobili</p>
+                            </li>
+                        </ul>
+                    </div>    
                 </div>
              
-                <div class="col">
+                <div class="col plan">
                     <div class="title-plan">
                         <i class="fa-solid fa-users"></i>   
                         <span>Team</span>
                     </div>
-                    <div class="plan">
-                        <div class="prize">
-                            <h3>Advanced</h3>
-                            <p> <strong>&euro; 18.00</strong>
-                            <br>/utente/mese</p>
-                        </div>
-                    </div>     
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-users"></i>
-                            <p> 3 o più utenti</p>
-                        </li>
+                    <div class="plan-container">
+                        <div class="plan-resume">
+                            <div class="price">
+                                <h3>Advanced</h3>
+                                <p> <strong>&euro; 18.00</strong>
+                                <br>/utente/mese</p>
+                            </div>
+                        </div>     
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-users"></i>
+                                <p> 3 o più utenti</p>
+                            </li>
                         
-                        <li>
-                            <i class="fa-solid fa-folder"></i>
-                            <p>Tutto lo spazio di cui ha bisogno il tuo team</p>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-share-nodes"></i>
-                            <p> Funzioni di controllo per tenere al sicuro tutti i files del tuo team.</p>
-                        </li>
-                    </ul>
-                    <button type="button" class="blue-button">Prova gratis per 30 giorni</button>  
-                    <p>oppure <a href="">acquista ora</a></p>
-                    <hr>
-                    <p><strong>Punti salienti del piano</strong></p>
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            <p> Nessun limite di spazio per i files</p>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            <p>Cartelle offline su dispositivi mobili</p>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            <p>Risparmio del 50% rispetto alle iscrizioni singole</p>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            <p>Possibilità di inserire nuovi membri del team</p>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            <p>Gestione dei permessi in base ai ruoli</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col">
+                            <li>
+                                <i class="fa-solid fa-folder"></i>
+                                <p>Tutto lo spazio di cui ha bisogno il tuo team</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-share-nodes"></i>
+                                <p> Funzioni di controllo per tenere al sicuro tutti i files del tuo team.</p>
+                            </li>
+                        </ul>
+                        <button type="button" class="blue-button">Prova gratis per 30 giorni</button>  
+                        <p>oppure <a href="">acquista ora</a></p>
+                        <hr>
+                        <p><strong>Punti salienti del piano</strong></p>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p> Nessun limite di spazio per i files</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>Cartelle offline su dispositivi mobili</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>Risparmio del 50% rispetto alle iscrizioni singole</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>Possibilità di inserire nuovi membri del team</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>Gestione dei permessi in base ai ruoli</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>    
+                <div class="col plan">
                     <div class="title-plan">
                         <i class="fa-solid fa-building"></i>
                         <span>Azienda</span>
                     </div>    
-                    <div class="plan">
-                        <div class="prize">
-                            <h3>Enterprise</h3>
-                            <p><strong>Contattaci</strong>
-                            <br>-</p>
-                        </div>
-                    </div>    
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-users"></i>
-                             <p> 10 o più utenti</p>
-                        </li>
+                    <div class="plan-container">
+                        <div class="plan-resume">
+                            <div class="price">
+                                <h3>Enterprise</h3>
+                                <p><strong>Contattaci</strong>
+                                <br>-</p>
+                            </div>
+                        </div>    
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-users"></i>
+                                <p>10 o più utenti</p>
+                            </li>
                         
-                        <li>
-                            <i class="fa-solid fa-folder"></i>
-                            <p>Soluzioni personabilizzabili per la tua azienda</p>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-share-nodes"></i>
-                            <p> Assistenza personalizzata per gli amministratori nella gestione su scala</p>
-                        </li>
-                    </ul>
-                    <button type="button" class="blue-button">Prova gratis per 30 giorni</button>  
-                    <p>oppure <a href="">acquista ora</a></p>
-                    <hr>
-                    <p><strong>Punti salienti del piano</strong></p>
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            <p> Cartelle offline su dispositivi mobili</p>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            <p>Servizio Assistenza 24/h</p>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            <p>Possibilità di personalizzazione totale</p>
-                        </li>
-                    </ul>
+                            <li>
+                                <i class="fa-solid fa-folder"></i>
+                                <p>Soluzioni personabilizzabili per la tua azienda</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-share-nodes"></i>
+                                <p> Assistenza personalizzata per gli amministratori nella gestione su scala</p>
+                            </li>
+                        </ul>
+                        <button type="button" class="blue-button">Contattaci</button>  
+                        <p>oppure <a href="">acquista ora</a></p>
+                        <hr>
+                        <p><strong>Punti salienti del piano</strong></p>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p> Cartelle offline su dispositivi mobili</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>Servizio Assistenza 24/h</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>Possibilità di personalizzazione totale</p>
+                            </li>
+                        </ul>
+                    </div>    
                 </div>
-            </div> 
+            </section> 
             
-            <!-- partners'-contacts -->
-            <div class="team-section">
+            <!-- contatta ufficio vendite -->
+            <section class="team-section">
                 <div class="team-title">
                     <i class="fa-solid fa-building"></i>
                     <span>team</span>
                 </div>
-            </div>
+            </section>
 
             <div class="team-text">
                 <div class="contatta-vendite">
@@ -250,21 +259,22 @@
                 </div>
             </div>
 
-            <!-- Contatta partners -->
-            <div class="partner-contact">
+            <!-- Contatta partners Dropbox -->
+            <section class="partner-contact">
                 <div class="img-part">
                     <img src="img/partner.png" alt="">
                 </div>
             
                 <div class="text-part">
-                    <h2>Entra in contatto con un partner Dropbox</h2>
+                    <h3>Entra in contatto con un partner Dropbox</h3>
                     <p>Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obiettivi aziendali, tra cui implementazione, integrazione, gestione e supporto continui.</p>
                     <button type="button" class="white-button">Trova un partner</button>
                 </div>
-            </div>
+            </section>
+
             <!-- features-section -->
             <h2>Esegui più operazioni con Dropbox business</h2>
-            <div class="cards-container">
+            <section class="cards-container">
                 <div class="row-cards">
                     <div class="col features">
                         <div>
@@ -314,8 +324,9 @@
                         <p>Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.</p>
                     </div>
                 </div>
-            </div>
-
+            </section>
+            
+            <!-- Discover-clients-section -->
             <section class="discover-clients">
                 <h2>Più di 500.000 team utilizzano Dropbox Business</h2>
                 <div class="blu-link">
@@ -323,7 +334,7 @@
                 </div>
             </section>
         </div>
-        <!-- logo-squares -->
+        <!-- logo-squares-section -->
         <section class="sponsor">
             <div class="row-sponsor">
                 <div class="col-sponsor designit">
@@ -331,7 +342,6 @@
                         <img class="logo-img"src="img/designit.svg" alt="">
                     </div>
                 </div>    
-            
 
                 <div class="col-sponsor arizona">
                     <div class="logo-container">
@@ -355,10 +365,10 @@
             <div class="row-sponsor central">
                 <div>
                     <img class="black-designit" src="img/designit.svg" alt="">
-                </div>
-                <hr>
+                </div>         
+                    <hr>
                 <p>"I membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox PAper"</p>
-                <P>Morten Thomsen, Global IT Lead</P>
+                <P class="cit">Morten Thomsen, Global IT Lead</P>
             </div>
 
             <div class="row-sponsor">
@@ -388,10 +398,10 @@
             </div>
         </section> 
         
-
-        <section class="advertising">
-            <div class="advertising-container">
-                <div>
+        <!-- Promotion-section -->
+        <section class="promotion">
+            <div class="promo-container">
+                <div class="promo-text">
                     <h2>Porta Dropbox Business nella tua azienda</h2>
                 </div>
                 <div>    
@@ -399,7 +409,8 @@
                 </div>
             </div>
         </section>
-
+        
+        <!-- FAQ-section -->
         <section class="faq">
             <h2>Domande frequenti</h2>
             <hr>
